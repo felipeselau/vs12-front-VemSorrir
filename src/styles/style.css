@@ -32,6 +32,10 @@ body, main{
     gap: 4rem;
 }
 
+h2{
+    font-weight: 800;
+}
+
 header{
     width: 100%;
     display: flex;
@@ -150,5 +154,70 @@ nav ul{
 .team-card-reverse .team-card-title{
     flex-direction: row-reverse;
 }
+
+.services{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards-wrapper{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card{
+    margin-top: 3.6rem;
+    background-color: var(--brand-light);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 24px;
+    border-radius: 4px;
+}
+
+.service-card-header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 7px;
+}
+
+.service-card-icon i{
+    border:1px solid var(--brand-1);
+    font-size: 35px;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.service-card-desc{
+    margin-top: 2rem;
+}
+
+.service-card-bttn{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-card-bttn a{
+    text-decoration: none;
+    color: var(--off-white);
+    width: 100%;
+    padding: 7px 0;
+    background-color: var(--brand-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+
+}
+
+
 
 
