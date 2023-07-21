@@ -407,6 +407,10 @@ nav ul{
         width: 70%;
     }
 
+    .nav-item{
+        font-size: 0.8rem;
+    }
+
     .mainHeader{
         display: flex;
         flex-direction: row-reverse;
@@ -472,6 +476,10 @@ nav ul{
     nav{
         width: 50%;
         margin-bottom: 50px;
+    }
+
+    .nav-item{
+        font-size: 1rem;
     }
 
     .mainHeader{
