@@ -1,0 +1,134 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--off-white);
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-offcanvas{
+    background-color: var(--brand-1-hover);
+    color: var(--grey-5);
+    max-width: 60%;
+    border-radius: 50px 0 0 0;
+}
+
+.off-title{
+    color: var(--grey-5);
+    padding: 36px 0 0 36px;
+}
+
+.off-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.off-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.login-wrapper{
+    background-color: var(--brand-light);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 35px 0 42px;
+    justify-content: center;
+
+    border-radius: 100px 0 0 0;
+}
+
+h1{
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.register-title{
+    margin-top: 4rem;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.inputs input{
+    background-color: var(--brand-light-2);
+    border: 0;
+    padding: 1rem 1.25rem;
+    border-radius: 50px;
+}
+
+.inputs input:focus{
+    outline: 0;
+}
+
+.bttns{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.bttns button, .bttns a{
+    all: unset;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bttns button{
+    background-color: var(--brand-1);
+    color: var(--off-white);
+    padding: 10px 0;
+    border-radius: 50px;
+}
+
+.bttns a{
+    text-decoration: none;
+    border: 1px solid var(--grey-1);
+    padding: 10px 0;
+    color: var(--grey-1);
+    border-radius: 50px;
+}
+
+@media screen and (min-width: 1024px){ 
+    *{
+        overflow: hidden;
+    }
+    
+    body{
+        display: flex;
+        align-items: center;
+        overflow-x: hidden;
+    }
+    .login-wrapper{
+        width: 80%;
+        border-radius: 100px 100px 0 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .login-wrapper{
+        width: 60%;
+        height: 80%;
+
+        border-radius: 100px;
+    }
+
+    .register-title, h1{
+        margin-top: 0;
+    }
+
+    .nav-wrapper{
+        max-width: 300px;
+    }
+
+}
