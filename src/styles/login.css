@@ -1,0 +1,172 @@
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--off-white);
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-wrapper{
+    justify-content: end;
+}
+
+.custom-offcanvas{
+    background-color: var(--brand-1-hover);
+    color: var(--grey-5);
+    max-width: 60%;
+    border-radius: 50px 0 0 0;
+}
+
+.off-title{
+    color: var(--grey-5);
+    padding: 36px 0 0 36px;
+}
+
+.off-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.off-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.login-wrapper{
+    background-color: var(--brand-light);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 35px 0 42px;
+    justify-content: center;
+
+    border-radius: 100px 0 0 0;
+}
+
+h4{
+    font-size: 1rem;
+
+}
+
+h1{
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.register-title{
+    margin-top: 4rem;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.inputs input{
+    background-color: var(--brand-light-2);
+    border: 0;
+    padding: 1rem 1.25rem;
+    border-radius: 50px;
+}
+
+.inputs input:focus{
+    outline: 0;
+}
+
+.bttns{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.bttns button, .bttns a{
+    all: unset;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bttns button{
+    background-color: var(--brand-1);
+    color: var(--off-white);
+    padding: 10px 0;
+    border-radius: 50px;
+}
+
+.bttns a{
+    text-decoration: none;
+    border: 1px solid var(--grey-1);
+    padding: 10px 0;
+    color: var(--grey-1);
+    border-radius: 50px;
+}
+
+.border{
+    width: 100%;
+    height: 5px;
+    background-color: red;
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-wrapper{
+        justify-content: end;
+    }
+
+    .login-wrapper{
+        width: 60%;
+        align-self: center;
+        border-radius: 50px 50px 0 0;
+    }
+    .register-title{
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .login-wrapper{
+        height: 70vh;
+        border-radius: 50px;
+    }
+
+    .login{
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .bttns{
+        margin-top: 1rem;
+    }
+
+    .register-wrapper{
+        height: 80vh;
+    }
+
+    .register-title{
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .login-wrapper{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1920px){
+    .login{
+        justify-content: space-around;
+    }
+    
+}

@@ -1,0 +1,45 @@
+:root{
+
+    --brand-1: #02CA74;
+    --brand-light: #DEF3EA;
+    --brand-light-2: #BAE1CF;
+    --brand-1-hover: #325446;
+    
+    --grey-1: #212529;
+    --grey-5: #F8F9FA;
+    --black: #0A0C0D;
+    --off-white: #efefef;
+    --white: #DEE2E6;
+}
+
+
+::-webkit-scrollbar{
+    width: 0.8rem;
+    background-color: var(--white);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--brand-1);
+}
+
+::-webkit-scrollbar-button{
+    display: none;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: var(--off-white);
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+main{
+    overflow: hidden;
+}
