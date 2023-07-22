@@ -13,6 +13,10 @@
     gap: 1rem;
 }
 
+.nav-links a{
+    font-size: 1.3rem;
+}
+
 .nav-links a.active{
     border-bottom: 2px solid var(--brand-light);
 }

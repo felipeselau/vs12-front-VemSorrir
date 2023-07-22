@@ -234,6 +234,7 @@ nav ul{
     width: 100%;
     background-color: var(--brand-light);
     display: flex;
+    flex-direction: row;
     padding: 35px 0 35px 28px;
     gap: 25px;
 }
