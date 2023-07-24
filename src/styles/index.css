@@ -342,32 +342,6 @@ nav ul{
     min-height: 240px;
 }
 
-.footer{
-    height: 60px;
-    background-color: var(--brand-1-hover);
-    width: 100vw;
-    display: flex;
-    align-items: center;
-}
-
-.div-footer{
-    display: flex;
-    justify-content: flex-end;
-    width: 90%;
-    align-items: center;
-    height: 50%;
-}
-
-.div-footer>i:hover{
-    cursor: pointer;
-}
-
-.ph{
-    background-color: var(--white);
-    width: 55px;
-    height: 55px;
-    border-radius: 50px;
-}
 
 @media screen and (min-width: 768px) {
 
