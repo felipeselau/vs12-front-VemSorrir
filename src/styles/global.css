@@ -43,3 +43,28 @@ body{
 main{
     overflow: hidden;
 }
+
+.footer{
+    margin-top: 2rem;
+    height: 8vh;
+    background-color: var(--brand-1-hover);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a{
+    text-decoration: none;
+    cursor: pointer;
+
+    color: var(--white);
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer a i{
+    font-size: 1.3rem;
+}
