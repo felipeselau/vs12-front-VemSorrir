@@ -5,6 +5,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
 .main-header {
@@ -23,7 +24,7 @@ nav {
 }
 
 .border {
-    width: 45%;
+    width: 60%;
     border-bottom: 1px solid var(--brand-1-hover);
     margin-bottom: 11px;
 }
@@ -98,7 +99,7 @@ main {
     font-weight: bold;
 }
 
-.form-att-dados div p{
+.form-att-dados div p {
     font-size: 0.75rem;
     font-weight: 400;
     padding: 15px 14px;
@@ -106,7 +107,7 @@ main {
     border-radius: 16px;
 }
 
-.form-att-dados button{
+.form-att-dados button {
     padding: 11px;
     border-radius: 16px;
     border: 1px solid var(--black);
@@ -115,22 +116,23 @@ main {
     align-self: flex-end;
 }
 
-.form-att-dados button:hover{
+.form-att-dados button:hover {
     cursor: pointer;
     background-color: var(--grey-3);
 }
 
 /* AGENDAR CONSULTA */
 
-.agendar{
+.agendar {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
+    width: 90%;
 }
 
-.agendar h2{
+.agendar h2 {
     margin-bottom: -35px;
 }
 
@@ -138,26 +140,27 @@ main {
     width: 60%;
 }
 
-.agendar-form{
+.agendar-form {
     display: flex;
     flex-direction: column;
     gap: 28px;
     width: 80%;
 }
 
-.agendar-form div{
+.agendar-form div {
     gap: 12px;
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.agendar-form div label{
+.agendar-form div label {
     font-size: 0.87rem;
     font-weight: bold;
 }
 
-.agendar-form div select, .agendar-form div input{
+.agendar-form div select,
+.agendar-form div input {
     padding: 16px 20px;
     box-sizing: border-box;
     background-color: var(--grey-3);
@@ -165,7 +168,7 @@ main {
     border-radius: 16px;
 }
 
-.button-form-agendar{
+.button-form-agendar {
     padding: 12px;
     border: none;
     border-radius: 16px;
@@ -175,7 +178,7 @@ main {
     font-weight: bolder;
 }
 
-.button-form-agendar:hover{
+.button-form-agendar:hover {
     cursor: pointer;
     background-color: var(--brand-1-hover);
 }
@@ -183,21 +186,23 @@ main {
 
 /* MEUS HORÁRIOS */
 
-.horarios-agendados{
+.horarios-agendados {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    width: 90%;
 }
 
-.border-horarios{
+.border-horarios {
     margin-top: -25px;
+    width: 60%;
 }
 
-.horarios-wrapper{
+.horarios-wrapper {
     width: 100vw;
-    padding: 50px 32px;
+    padding: 90px 32px;
     background-color: var(--brand-light);
     display: flex;
     flex-direction: column;
@@ -208,7 +213,27 @@ main {
 
 /* BLOG */
 
-.blog{
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 90%;
+}
+
+.border-blog {
+    margin-top: -20px;
+    width: 60%;
+}
+
+.video-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videos-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,23 +241,141 @@ main {
     gap: 25px;
 }
 
-.border-blog{
-    margin-top: -20px;
-}
-
-.video-card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.videos-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.video-card{
+.video-card {
     width: 90%;
     gap: 20px;
+}
+
+/* KEYFRAMES */
+
+@media screen and (min-width: 768px) {
+    .dados-form {
+        max-width: 80%;
+    }
+
+    .agendar-form{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .dados-form {
+        max-width: 70%;
+    }
+
+    .agendar-form{
+        width: 40%;
+    }
+
+    .horarios-wrapper {
+        padding: 150px 32px;
+    }
+
+    .form-att-dados div h3{
+        font-size: 1.2rem;
+    }
+
+    .form-att-dados div p{
+        font-size: 1rem;
+    }
+
+    .form-att-dados button{
+        font-size: 1rem;
+    }
+
+    .nav-links{
+        font-size: 1.2rem;
+        gap: 32px;
+        margin-bottom: 20px;
+    }
+
+    .user-photo{
+        width: 150px;
+        height: 150px;
+    }
+
+    .user-photo img{
+        border-radius: 100px;
+    }
+
+    .dados-form{
+        padding-left: 200px;
+    } 
+
+    .form-att-dados{
+        width: 90%;
+    }
+
+    .agendar p{
+        font-size: 1.2rem;
+    }
+
+    .agendar-form div label{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .dados-form {
+        max-width: 55%;
+    }
+
+    .agendar-form{
+        width: 40%;
+    }
+
+    .horarios-wrapper {
+        padding: 150px 32px;
+    }
+
+    .form-att-dados div h3{
+        font-size: 1.2rem;
+    }
+
+    .form-att-dados div p{
+        font-size: 1rem;
+    }
+
+    .form-att-dados button{
+        font-size: 1rem;
+    }
+
+    .nav-links{
+        font-size: 1.2rem;
+        gap: 32px;
+        margin-bottom: 20px;
+    }
+
+    .user-photo{
+        width: 150px;
+        height: 150px;
+    }
+
+    .user-photo img{
+        border-radius: 100px;
+    }
+
+    .dados-form{
+        padding-left: 200px;
+    } 
+
+    .form-att-dados{
+        width: 90%;
+    }
+
+    .agendar p{
+        font-size: 1.2rem;
+    }
+
+    .agendar-form div label{
+        font-size: 1.2rem;
+    }
+
+    .agendar-form div select, .agendar-form div input{
+        font-size: 1rem;
+    }
+
+    .button-form-agendar{
+        font-size: 1.2rem;;
+    }
 }
