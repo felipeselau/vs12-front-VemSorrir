@@ -1,0 +1,45 @@
+.custom-nav{
+    width: 100%;
+}
+
+.nav-wrapper{
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-links{
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav-links a{
+    font-size: 1.3rem; 
+}
+
+.nav-links a.active{
+    border-bottom: 2px solid var(--brand-light);
+}
+
+.custom-offcanvas{
+    background-color: #325446;
+}
+
+.custom-offcanvas h2{
+    color: var(--off-white);
+}
+
+.offcanvas-nav{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.offcanvas-nav a{
+    font-weight: 700;
+    color: var(--white);
+    border-bottom: 1px solid var(--brand-light);
+}
