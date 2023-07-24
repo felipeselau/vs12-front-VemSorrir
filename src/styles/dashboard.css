@@ -1,0 +1,238 @@
+/* HEADER */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-header {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+.border {
+    width: 45%;
+    border-bottom: 1px solid var(--brand-1-hover);
+    margin-bottom: 11px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    font-size: 0.75rem;
+    gap: 14px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* MAIN */
+/* SUA ÁREA */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    height: 100%;
+}
+
+.dados-form {
+    background-color: var(--brand-light);
+    border-radius: 140px 8px 8px 8px;
+    padding: 30px 30px 35px 87px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 32px;
+    width: 90%;
+}
+
+.user-photo {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.user-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.form-att-dados {
+    display: flex;
+    flex-direction: column;
+    margin-left: 11px;
+    gap: 25px;
+}
+
+.form-att-dados div {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-att-dados div h3 {
+    font-size: 0.87rem;
+    font-weight: bold;
+}
+
+.form-att-dados div p{
+    font-size: 0.75rem;
+    font-weight: 400;
+    padding: 15px 14px;
+    border: 1px solid var(--brand-1);
+    border-radius: 16px;
+}
+
+.form-att-dados button{
+    padding: 11px;
+    border-radius: 16px;
+    border: 1px solid var(--black);
+    background-color: transparent;
+    width: 50%;
+    align-self: flex-end;
+}
+
+.form-att-dados button:hover{
+    cursor: pointer;
+    background-color: var(--grey-3);
+}
+
+/* AGENDAR CONSULTA */
+
+.agendar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.agendar h2{
+    margin-bottom: -35px;
+}
+
+.border-agendar {
+    width: 60%;
+}
+
+.agendar-form{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 80%;
+}
+
+.agendar-form div{
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.agendar-form div label{
+    font-size: 0.87rem;
+    font-weight: bold;
+}
+
+.agendar-form div select, .agendar-form div input{
+    padding: 16px 20px;
+    box-sizing: border-box;
+    background-color: var(--grey-3);
+    border: none;
+    border-radius: 16px;
+}
+
+.button-form-agendar{
+    padding: 12px;
+    border: none;
+    border-radius: 16px;
+    background-color: var(--brand-1);
+    color: var(--white);
+    font-size: 0.87rem;
+    font-weight: bolder;
+}
+
+.button-form-agendar:hover{
+    cursor: pointer;
+    background-color: var(--brand-1-hover);
+}
+
+
+/* MEUS HORÁRIOS */
+
+.horarios-agendados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.border-horarios{
+    margin-top: -25px;
+}
+
+.horarios-wrapper{
+    width: 100vw;
+    padding: 50px 32px;
+    background-color: var(--brand-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+/* BLOG */
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.border-blog{
+    margin-top: -20px;
+}
+
+.video-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videos-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-card{
+    width: 90%;
+    gap: 20px;
+}
