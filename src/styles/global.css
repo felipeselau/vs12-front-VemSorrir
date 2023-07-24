@@ -6,6 +6,7 @@
     --brand-1-hover: #325446;
     
     --grey-1: #212529;
+    --grey-3: #DEE2E6;
     --grey-5: #F8F9FA;
     --black: #0A0C0D;
     --off-white: #efefef;
@@ -30,7 +31,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     font-family: 'Inter', sans-serif;
 }
 
