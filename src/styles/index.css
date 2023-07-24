@@ -88,6 +88,7 @@ nav ul{
 .hero-text h1{
     font-size: 1.3rem;
     margin-top: 2.25rem;
+    font-weight: bolder;
 }
 
 .hero-text p{
@@ -237,33 +238,40 @@ nav ul{
     flex-direction: row;
     padding: 35px 0 35px 28px;
     gap: 25px;
+    border: none;
+    position: relative;
 }
 
 .card-text{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding-right: 20%;
 }
 
 .card-foto{
     display: flex;
     align-items: center;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: -30px;
     
 }
 
 .card-foto img{
     border: 0.5px solid var(--brand-1-hover);
     border-radius: 50%;
-    margin-right: -27px;
+    width: 100%;
+    height: 100%;
 }
 
 .segundo-card{
-    flex-direction: row-reverse;
+    padding-left: 20%;
 }
 
-.segundo-card .card-foto img{
-    margin-right: 0;
-    margin-left: -55px;
+.segundo-card .card-foto{
+    left: -30px;
 }
 
 
@@ -294,7 +302,7 @@ nav ul{
     gap: 18px;
     width: 50%;
     background-color: var(--brand-1-hover);
-    padding: 40px 20px;
+    padding: 20px;
     min-height: 240px;
 }
 
@@ -313,7 +321,7 @@ nav ul{
 .button-localizacao{
     background-color: var(--brand-1);
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     color: var(--white);
     padding: 5px 14px;
     box-sizing: border-box;
@@ -324,6 +332,7 @@ nav ul{
 
 .button-localizacao:hover{
     background-color: var(--brand-1-hover);
+    border: 1px solid var(--brand-1);
     cursor: pointer;
 }
 
@@ -374,6 +383,30 @@ nav ul{
 
     .hero-img:hover{
         animation: zoom-image 1s alternate;
+    }
+    
+    .card-text{
+        padding-right: 18%;
+    }
+    
+    .card-foto{
+        width: 80px;
+        height: 80px;
+        right: -40px;
+    }
+    
+    .segundo-card{
+        padding-left: 18%;
+    }
+    
+    .segundo-card .card-foto{
+        left: -40px;
+    }
+
+    .info-localizacao{
+        justify-content: center;
+        align-items: center;
+        min-height: 245px;
     }
 
     @keyframes zoom-image{
@@ -456,6 +489,40 @@ nav ul{
 
     .hero-img:hover{
         animation: zoom-image 5s;
+    }
+
+    .card-text{
+        padding-right: 12%;
+    }
+    
+    .card-foto{
+        width: 100px;
+        height: 100px;
+        right: -50px;
+    }
+    
+    .segundo-card{
+        padding-left: 12%;
+    }
+    
+    .segundo-card .card-foto{
+        left: -50px;
+    }
+
+    .info-localizacao{
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        padding-inline-start: 15px;
+    }
+
+    .info-localizacao p{
+        width: 70%;
+    }
+
+    .button-localizacao{
+        width: 80%;
+        font-size: 0.8rem;
     }
 
     @keyframes zoom-image{
@@ -584,6 +651,28 @@ nav ul{
 
     .depoimento>p, .autor>span>em{
         font-size: 22px;
+    }
+
+    .info-localizacao{
+        padding-inline-start: 7%;
+    }
+
+    .card-text{
+        padding-right: 12%;
+    }
+    
+    .card-foto{
+        width: 140px;
+        height: 140px;
+        right: -70px;
+    }
+    
+    .segundo-card{
+        padding-left: 12%;
+    }
+    
+    .segundo-card .card-foto{
+        left: -70px;
     }
 
     @keyframes zoom-image{
