@@ -1,3 +1,7 @@
+if (localStorage.getItem("logado")) {
+    window.location.href = 'dashboard.html';
+}
+
 async function procurarLogradouro(){
     let saida = document.getElementById('logradouro-register-input');
     let cep = parseInt(document.getElementById('cep-register-input').value);
@@ -73,7 +77,8 @@ function cadastrarUsuario(){
         msgSucesso.classList.add("show");
         setTimeout(() => {
             msgSucesso.classList.remove("show");
-        }, 4000);
+            window.location.href = 'login.html';
+        }, 3000);
 
         nome.value = '';
         email.value = '';
@@ -81,9 +86,5 @@ function cadastrarUsuario(){
         cep.value = '';
         logradouro.value = '';
         dataInput.value = '';
-
-        document.querySelectorAll('input, button').forEach((elemento) => {
-            elemento.blur();
-        });
     }
 }

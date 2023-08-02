@@ -50,13 +50,13 @@
     </nav>
 
     <!-- Login -->
-    <section class="login-wrapper register-wrapper">
+    <section class="login-wrapper register-wrapper" id="form">
         <form action="#" class="login register">
             <h1 class="register-title">Cadastro</h1>
             <p class="cadastro-sucesso text-white position-fixed p-3 rounded text-center" id="cadastro-sucesso">
                 Cadastro realizado com sucesso!
             </p>
-            <div class="inputs">
+            <div class  ="inputs">
                 <input type="text" placeholder="Seu nome" id="nome-register-input" minlength="3" required>
                 <input type="email" placeholder="Seu e-mail" id="email-register-input" required>
                 <input type="password" placeholder="Sua senha" id="senha-register-input" minlength="8" required>
@@ -68,7 +68,7 @@
                 id="dataNasc-register-input" required>
             </div>
             <div class="bttns">
-                <button onclick="cadastrarUsuario()" type="submit" class="login-bttn"><a href="#">Cadastrar</a></button>
+                <button onclick="cadastrarUsuario()" type="submit" class="login-bttn"><a href="#form">Cadastrar</a></button>
                 <span>Já possui conta?</span>
                 <a href="login.html">Fazer Login</a>
             </div>
