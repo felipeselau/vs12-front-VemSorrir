@@ -209,7 +209,7 @@
                     <div class="card-text">
                         <div class="depoimento">
                             <p>
-                                "Estou extremamente satisfeito com o atendimento que recebi! Desde o primeiro contato, fui tratada com gentileza e profissionalismo. A equipe foi cuidadosa em explicar cada etapa do procedimento, transmitindo confiança. Meu sorriso agora está mais saudável e bonito!
+                                "Estou extremamente satisfeito com o atendimento que recebi! Desde o primeiro contato, fui tratada com gentileza e profissionalismo. A equipe foi cuidadosa em explicar cada etapa do procedimento, transmitindo confiança. Meu sorriso agora está mais saudável e bonito!"
                             </p>
                         </div>
                         <div class="autor">
@@ -226,30 +226,43 @@
                         height="55">
                     </figure>
                 </div>
-                <button class="btn btn-success service-card-bttn modal-toggle-btn"  data-bs-toggle="modal" data-bs-target="#reviewModal">Já é nosso cliente? Avalie você também!</button>
+
+                <div id="containerDepoimentos" class="w-100 card-depoimento-container">
+
+                </div>
             </div>
+            <button class="btn btn-success service-card-bttn modal-toggle-btn"  data-bs-toggle="modal" data-bs-target="#reviewModal">Já é nosso cliente? Avalie você também!</button>
 
             <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content review-modal">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5 mt-3" id="exampleModalLabel">Preencha os campos</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <form action="#" class="d-flex flex-column gap-3">
-                        <input class="" type="text" name="reviewName" id="reviewName" placeholder="Seu Nome:" required>
-                        <input class="" type="email" name="reviewEmail" id="reviewEmail" placeholder="Seu E-Mail" required>
-                        <textarea class="" name="reviewMsg" id="reviewMsg" cols="30" rows="5" placeholder="Sua Mensagem..." required></textarea>
-                      </form>
-                    </div>
-                    <div class="modal-footer d-flex align-items-center justify-content-center">
-                      <button type="button" class="btn btn-primary modal-btn">Enviar Comentário</button>
-                    </div>
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 mt-3" id="exampleModalLabel">Preencha os campos</h1>
+                            <p class="review-sucesso text-white position-fixed p-3 rounded text-center" id="review-sucesso">
+                                Avaliação cadastrada com sucesso!
+                            </p>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#" id="formReview" class="d-flex flex-column gap-3">
+                                <input type="text" name="reviewName" id="reviewName" 
+                                placeholder="Seu Nome:" minlength="3" required>
+                                <input type="email" name="reviewEmail" id="reviewEmail" 
+                                placeholder="Seu E-Mail" required>
+                                <textarea oninput="contaChar()" name="reviewMsg" id="reviewMsg" cols="30" rows="5" 
+                                placeholder="Sua Mensagem..." maxlength="150" required></textarea>
+                                <p class="text-end m-0 ">
+                                    <span id="contador">0</span>/150
+                                </p>
+
+                                <div class="modal-footer d-flex align-items-center justify-content-center">
+                                    <button onclick="cadastraReview()" type="submit" class="btn btn-primary modal-btn">Enviar Comentário</button>
+                                </div>
+                            </form>
+                        </div>
                   </div>
                 </div>
-              </div>
-
+            </div>
         </section>
 
         <section class="localização" data-aos="fade-up">
@@ -275,6 +288,8 @@
                 Voltar ao topo<i class="ph ph-arrow-circle-up"></i>
             </a>
     </footer>
+
+    <script src="./src/js/index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
