@@ -31,12 +31,19 @@ nav {
 
 .nav-links {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
     list-style: none;
     text-decoration: none;
     font-size: 0.75rem;
     gap: 14px;
+    padding: 0;
+}
+
+.nav-links li{
+    display: flex;
+    align-items: center;
 }
 
 .nav-item {
@@ -62,6 +69,7 @@ main {
     padding: 30px 30px 35px 87px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: relative;
     margin-top: 32px;
     width: 90%;
@@ -112,8 +120,7 @@ main {
     border-radius: 16px;
     border: 1px solid var(--black);
     background-color: transparent;
-    width: 50%;
-    align-self: flex-end;
+    width: 100%;
 }
 
 .form-att-dados button:hover {
@@ -168,7 +175,7 @@ main {
     border-radius: 16px;
 }
 
-.button-form-agendar {
+.button-form-agendar, .button-form-medico {
     padding: 12px;
     border: none;
     border-radius: 16px;
@@ -181,6 +188,19 @@ main {
 .button-form-agendar:hover {
     cursor: pointer;
     background-color: var(--brand-1-hover);
+}
+
+.button-form-medico{
+    background-color: var(--grey-3);
+    color: var(--black);
+}
+
+.lista-medicos{
+    background-color:var(--brand-light);
+}
+
+.lista-medicos h1{
+    font-size: 77700;
 }
 
 

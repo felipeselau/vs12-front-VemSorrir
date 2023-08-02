@@ -226,9 +226,29 @@
                         height="55">
                     </figure>
                 </div>
-
-
+                <button class="btn btn-success service-card-bttn modal-toggle-btn"  data-bs-toggle="modal" data-bs-target="#reviewModal">Já é nosso cliente? Avalie você também!</button>
             </div>
+
+            <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content review-modal">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5 mt-3" id="exampleModalLabel">Preencha os campos</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="#" class="d-flex flex-column gap-3">
+                        <input class="" type="text" name="reviewName" id="reviewName" placeholder="Seu Nome:" required>
+                        <input class="" type="email" name="reviewEmail" id="reviewEmail" placeholder="Seu E-Mail" required>
+                        <textarea class="" name="reviewMsg" id="reviewMsg" cols="30" rows="5" placeholder="Sua Mensagem..." required></textarea>
+                      </form>
+                    </div>
+                    <div class="modal-footer d-flex align-items-center justify-content-center">
+                      <button type="button" class="btn btn-primary modal-btn">Enviar Comentário</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
         </section>
 
