@@ -190,17 +190,44 @@ main {
     background-color: var(--brand-1-hover);
 }
 
+/* Modal */
+
 .button-form-medico{
     background-color: var(--grey-3);
     color: var(--black);
 }
 
 .lista-medicos{
-    background-color:var(--brand-light);
+    background-color:var(--off-white);
 }
 
 .lista-medicos h1{
-    font-size: 77700;
+    font-size: 700;
+}
+
+
+.medicos-form form{
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+.medicos-form form:first-child{
+    border-top: 1px solid var(--brand-1);
+}
+
+.medico-card{
+    padding: 1.3rem 1rem;
+    border-bottom: 1px solid var(--brand-1);
+}
+
+.medico-card input{
+
+}
+
+.nome-medico{
+    padding-left: 1rem;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 

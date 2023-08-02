@@ -94,7 +94,7 @@
                 <div>
                     <label for="agendar-medico">Selecione o profissional:</label>
                     <input type="text" name="agendar-medico" id="agendar-medico" value="Profissional Escolhido"  required>
-                    <button class="button-form-medico" id="agendar-medico" data-bs-toggle="modal" data-bs-target="#inputMedico">Clique para selecionar</button>
+                    <button class="button-form-medico" id="agendar-medico" data-bs-toggle="modal" data-bs-target="#inputMedico" >Clique aqui para selecionar</button>
                 </div>
                 
                 <button class="button-form-agendar" data-bs-toggle="modal" data-bs-target="#modalConsultaOk" type="submit">Agendar consulta!</button>
@@ -108,14 +108,13 @@
                       <h1 class="modal-title fs-5" id="exampleModalLabel">Profissionas Disponíveis:</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        <div id="medicos-container">
-
-                        </div>
+                    <div class="modal-body medicos-form">
+                        <form id="medicos-container" class="d-flex flex-column align-items-left">
+                        </form>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                      <button type="button" class="btn btn-success">Selecionar</button>
+                      <button type="button" class="btn btn-success" data-bs-dismiss="modal" onclick="escolherMedico()">Selecionar</button>
                     </div>
                   </div>
                 </div>
@@ -179,6 +178,8 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script src="../js/medicos.js"></script>
 </body>
 
 </html>
