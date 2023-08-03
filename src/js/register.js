@@ -56,7 +56,10 @@ function cadastrarUsuario(){
         nome.checkValidity() && email.checkValidity() && senha.checkValidity() && 
         cep.checkValidity() && logradouro.checkValidity() && dataInput.checkValidity()
     ) {
+        let cadastros = JSON.parse(localStorage.getItem("cadastros")) || [];
+
         let usuario = {
+            id: cadastros.length + 1,
             nome: nome.value,
             email: email.value,
             senha: senha.value,
@@ -64,8 +67,6 @@ function cadastrarUsuario(){
             logradouro: logradouro.value,
             dataNascimento: dataInput.value
         }
-
-        let cadastros = JSON.parse(localStorage.getItem("cadastros")) || [];
 
         cadastros.push(usuario);
 
