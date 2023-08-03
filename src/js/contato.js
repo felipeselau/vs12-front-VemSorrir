@@ -26,3 +26,8 @@ form.addEventListener('submit', event =>{
 
 
 })
+
+function logout(){
+    localStorage.removeItem("logado");
+    window.location.href = 'login.html';
+}
