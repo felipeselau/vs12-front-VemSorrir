@@ -1,7 +1,7 @@
 <h1 align="center"> vs12-front-VemSorrir </h1>
 
 <p align="center">
-  Site em HTML e CSS, desenvolvido a fim de cumprir com os objetivos da task 04 - Projeto final do módulo de HTML e CSS do VemSer, proposta pelo TechLead Rafael Ramos.<br/>
+  Site desenvolvido a fim de cumprir com os objetivos da task 06 - Projeto final do módulo de JavaScript do VemSer, proposta pela TechLead Cristina Jung.<br/> 
 </p>
 
 <p align="center">
@@ -24,6 +24,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML 5
 - CSS 3
+- Bootstrap
 - JavaScript
 
 ## ⚙️ Instalação do projeto
@@ -41,4 +42,4 @@ no arquivo index.html, abrir com Live Server.
 
 ## 💻 Sobre o Projeto
 
-O projeto é uma aplicação de HTML, CSS e Javascript, a fim de realizar a task de final de módulo do módulo de JavaScript do VemSer, adicionando funcionalidades como o consumo de APIs de forma assíncrona
+O projeto é uma aplicação desenvolvida com HTML, CSS, Bootstrap e Javascript, a fim de realizar a task final do módulo de JavaScript do VemSer, adicionando funcionalidades como o consumo de APIs de forma assíncrona
