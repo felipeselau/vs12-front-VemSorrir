@@ -8,6 +8,24 @@ header {
     margin-top: 10px;
 }
 
+.show {
+    display: block;
+}
+
+.agendamento-sucesso, .erro-agendamento{
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 1px 1px 10px black;
+    background-color: #198754;
+    animation: fadeInOut 3s ease-out;
+    display: none;
+}
+
+.erro-agendamento{
+    background-color: #DC3545;
+}
+
 .main-header {
     width: 90%;
     display: flex;

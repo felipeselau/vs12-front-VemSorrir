@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
     <header id="topo">
         <div class="main-header">
             <a href="#" class="logo">
@@ -58,19 +57,28 @@
         </section>
         
         <section class="agendar">
+
             <h2>Agendar Consulta</h2>
             <div class="border border-agendar"></div>
             <p>Agende sua consulta de forma rápida e prática!</p>
+            
+            <p class="erro-agendamento text-white position-fixed p-3 rounded text-center" id="erro-agendamento">
+            Erro no agendamento :( Tente novamente.
+            </p>
+            <p class="agendamento-sucesso text-white position-fixed p-3 rounded text-center" id="agendamento-sucesso">
+            Agendamento feito com sucesso!
+            </p>
 
-            <form class="agendar-form needs-validation">
+
+            <form class="agendar-form needs-validation" id="agendar-form">
 
                 <div>
-                    <label for="agendar-serviço">Selecione o Serviço:</label>
-                    <select name="agendar-serviço" id="agendar-serviço" required>
+                    <label for="agendar-servico">Selecione o Serviço:</label>
+                    <select name="agendar-servico" id="agendar-servico" required>
                         <option value="" disabled selected>Selecione...</option>
                         <option value="aparelho">Aparelho Ortodôntico</option>
                         <option value="clareamento">Clareamento Dental</option>
-                        <option value="implante">Implantes Dentários</option>
+                        <option value="implante">Implante Dentário</option>
                     </select>
                 </div>
 
@@ -83,21 +91,21 @@
                     <label for="agendar-hora">Selecione a hora:</label>
                     <select name="agendar-hora" id="agendar-hora" required>
                         <option value="" disabled selected>Hora</option>
-                        <option value="1">08:30</option>
-                        <option value="1">09:30</option>
-                        <option value="1">10:30</option>
-                        <option value="1">11:30</option>
-                        <option value="1">12:30</option>
-                        <option value="1">13:30</option>
+                        <option class="horario" value="1">08:30</option>
+                        <option class="horario" value="2">09:30</option>
+                        <option class="horario" value="3">10:30</option>
+                        <option class="horario" value="4">11:30</option>
+                        <option class="horario" value="5">12:30</option>
+                        <option class="horario" value="6">13:30</option>
                     </select>
                 </div>
                 <div>
                     <label for="agendar-medico">Selecione o profissional:</label>
-                    <input type="text" name="agendar-medico" id="agendar-medico" value="Profissional Escolhido"  required>
+                    <input type="text" name="agendar-medico" id="agendar-medico" placeholder="Profissional Escolhido"  required>
                     <button class="button-form-medico" id="agendar-medico" data-bs-toggle="modal" data-bs-target="#inputMedico" >Clique aqui para selecionar</button>
                 </div>
                 
-                <button class="button-form-agendar" data-bs-toggle="modal" data-bs-target="#modalConsultaOk" type="submit">Agendar consulta!</button>
+                <button class="button-form-agendar" type="submit" onclick="cadastrarConsulta()">Agendar consulta!</button>
 
             </form>
 
@@ -119,31 +127,13 @@
                   </div>
                 </div>
               </div>
-
-            <div class="modal fade" id="modalConsultaOk" tabindex="-1" aria-labelledby="modalConsultaOk" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Sucesso!</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <p>Sua consulta foi Agendada!</p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-success" data-bs-dismiss="modal">OK</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
         </section>
 
         <section class="horarios-agendados">
             <h2>Meus Horários</h2>
             <div class="border border-horarios"></div>
-            <div class="horarios-wrapper">
-                <span class="material-symbols-outlined">broken_image</span>
-                <p><em>Você ainda não possui agendamentos...</em></p>
+            <div class="horarios-wrapper" id="consultas">
+                
             </div>
         </section>
 
@@ -180,6 +170,7 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
     <script src="../js/medicos.js"></script>
+    <script src="../js/consulta.js"></script>
 </body>
 
 </html>
