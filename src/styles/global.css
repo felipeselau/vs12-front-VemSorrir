@@ -45,6 +45,10 @@ main{
     width: 100%;
 }
 
+main.principal{
+    overflow: unset;
+}
+
 .footer{
     margin-top: 2rem;
     height: 8vh;
