@@ -1,5 +1,13 @@
 const formulario = document.getElementById('formReview');
 
+function loginOrDashboard(){
+    if (localStorage.getItem("logado")) {
+        window.location.href = './src/pages/dashboard.html';
+    } else {
+        window.location.href = './src/pages/login.html';
+    }
+}
+
 formulario.addEventListener('submit', (event) => {
     event.preventDefault();
 });
@@ -40,6 +48,7 @@ function cadastraReview(){
             mensagem.value = '';
         }, 100);    
 
+        document.getElementById('closeModal').click();
         document.getElementById('contador').innerText = 0;
     }
 }

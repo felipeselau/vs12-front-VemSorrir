@@ -39,7 +39,7 @@
                     </div>
     
                     <div class="user">
-                        <a href="./src/pages/login.html">
+                        <a onclick="loginOrDashboard()" href="#">
                             <img src="./src/assets/user.svg" alt="">
                         </a>
                     </div>
@@ -233,15 +233,15 @@
             </div>
             <button class="btn btn-success service-card-bttn modal-toggle-btn"  data-bs-toggle="modal" data-bs-target="#reviewModal">Já é nosso cliente? Avalie você também!</button>
 
+            <p class="review-sucesso text-white position-fixed p-3 rounded text-center" id="review-sucesso">
+                Avaliação cadastrada com sucesso!
+            </p>
             <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content review-modal">
                         <div class="modal-header">
                             <h1 class="modal-title fs-5 mt-3" id="exampleModalLabel">Preencha os campos</h1>
-                            <p class="review-sucesso text-white position-fixed p-3 rounded text-center" id="review-sucesso">
-                                Avaliação cadastrada com sucesso!
-                            </p>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button id="closeModal" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <form action="#" id="formReview" class="d-flex flex-column gap-3">
