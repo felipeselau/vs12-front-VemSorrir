@@ -15,6 +15,10 @@ function cadastrarConsulta(){
     let medico = document.querySelector('#agendar-medico').value;
     let hoje = new Date().toISOString();
     
+    form.addEventListener('submit', event =>{
+        event.preventDefault()
+    })
+    
     let vazio = (servico == '') || (data == '') || (horario == '') || (medico == '')
     
     if(vazio){
@@ -34,9 +38,6 @@ function cadastrarConsulta(){
     data = dataFormatada[2]+"/"+dataFormatada[1]+"/"+dataFormatada[0];
     
 
-    form.addEventListener('submit', event =>{
-        event.preventDefault()
-    })
 
     switch(servico){
         case 'aparelho':
