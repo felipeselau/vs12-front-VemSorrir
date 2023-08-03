@@ -14,12 +14,17 @@
   <img alt="imagem do site pronto no navegador Edge" src="./src/assets/tela-projeto-final.png">
 </p>
 
+<p align="center">
+  <a href="https://vs12-front-vem-sorrir.vercel.app/" target="_blank">➡️ Acesse o deploy!</a>
+</p>
+
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML 5
 - CSS 3
+- JavaScript
 
 ## ⚙️ Instalação do projeto
 
@@ -36,4 +41,4 @@ no arquivo index.html, abrir com Live Server.
 
 ## 💻 Sobre o Projeto
 
-O projeto é uma aplicação de HTML e CSS, a fim de realizar a task 04 - Projeto final do módulo de HTML e CSS do VemSer. Fizemos uma página de uma Clínica Odontológica para demonstrar conhecimentos de transitions, media screen, tags HTML e outros conhecimentos pertinentes às linguagens HTML e CSS.
+O projeto é uma aplicação de HTML, CSS e Javascript, a fim de realizar a task de final de módulo do módulo de JavaScript do VemSer, adicionando funcionalidades como o consumo de APIs de forma assíncrona
