@@ -13,24 +13,30 @@ function cadastrarConsulta(){
     let data = document.querySelector('#agendar-data').value;
     let horario = document.querySelector('#agendar-hora').value;
     let medico = document.querySelector('#agendar-medico').value;
-
-
-
+    let hoje = new Date().toISOString();
+    
+    let vazio = (servico == '') || (data == '') || (horario == '') || (medico == '')
+    
+    if(vazio){
+        //alert('Preencha todos os dados do formulário!');
+        mostrarToast('error')
+        data
+        return;
+    }
+    
+    if (data < hoje){
+        data = '';
+        mostrarToast('data');
+        return;
+    } 
 
     let dataFormatada = data.split('-')
     data = dataFormatada[2]+"/"+dataFormatada[1]+"/"+dataFormatada[0];
+    
 
     form.addEventListener('submit', event =>{
         event.preventDefault()
     })
-
-    let vazio = (servico == '') || (data == '') || (horario == '') || (medico == '')
-
-    if(vazio){
-        //alert('Preencha todos os dados do formulário!');
-        mostrarToast('error')
-        return;
-    }
 
     switch(servico){
         case 'aparelho':
@@ -93,13 +99,18 @@ function mostrarToast(toast){
     let msg;
     if(toast == 'error'){
         msg = document.querySelector('#erro-agendamento');
+        msg.innerHTML = 'Erro no agendamento :( Tente novamente.'
     }else if(toast == 'success'){
         msg = document.querySelector('#agendamento-sucesso');
+    }else if( toast == 'data'){
+        msg = document.querySelector('#erro-agendamento');
+        msg.innerHTML = 'Data Inválida!';
     }
 
     msg.style.display = 'block';
     setTimeout(() => {
         msg.style.display = 'none';
+
     }, 3000);
 }
 
