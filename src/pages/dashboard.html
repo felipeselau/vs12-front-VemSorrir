@@ -16,19 +16,19 @@
 <body>
     <header id="topo">
         <div class="main-header">
-            <a href="#" class="logo">
+            <a href="../../index.html" class="logo">
                 <img src="../assets/logo-completo.png" alt="">
             </a>
-            <a href="../../index.html" class="logout"><span class="material-symbols-outlined">logout</span></a>
+            <a onclick="logout()" href="#" class="logout"><span class="material-symbols-outlined">logout</span></a>
         </div>
         <nav>
             <h1>Sua Área</h1>
             <div class="border"></div>
             <ul class="nav-links">
-                <li><a href="#dados-form" class="nav-item">Meus Dados</a></li>
                 <li><a href="#agendar" class="nav-item">Agendar Consulta</a></li>
                 <li><a href="#horarios-agendados" class="nav-item">Meus Horários</a></li>
-                <li><a href="#" class="nav-item">Blog</a></li>
+                <li><a href="#contato" class="nav-item">Contato</a></li>
+                <li><a href="#blog" class="nav-item">Blog</a></li>
             </ul>
         </nav>
     </header>
@@ -36,27 +36,57 @@
     <main>
         <section class="dados-form" id="dados-form">
             <figure class="user-photo">
-                <img src="../assets/user-area-logada.jpg" alt="">
+                <img id="img-profile" src="../assets/perfil.png" alt="">
             </figure>
             <form action="#" class="form-att-dados">
                 <div>
                     <h3>Nome Completo</h3>
-                    <p class="att-nome">Ana Francisca Lemos da Paz</p>
+                    <p id="nome-usuario" class="att-nome"></p>
                 </div>
                 <div>
                     <h3>E-mail</h3>
-                    <p class="att-email">anafrancisca@vemsorrir.com.br</p>
+                    <p id="email-usuario" class="att-email"></p>
                 </div>
                 <div>
                     <h3>Data de nascimento</h3>
-                    <p class="att-data">23/07/1992</p>
+                    <p id="data-nasc-usuario" class="att-data"></p>
                 </div>
 
-                <button>Alterar dados</button>
+                <button class="modal-toggle-btn"  data-bs-toggle="modal" data-bs-target="#alterarDadosModal">Alterar dados</button>
             </form>
+            
+            <p class="alteracao-sucesso text-white position-fixed p-3 rounded text-center" id="alteracao-sucesso">
+                Dados alterados com sucesso!
+            </p>
+            <div class="modal fade" id="alterarDadosModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content alterar-dados-modal">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 mt-3" id="exampleModalLabel">Preencha os campos</h1>
+                            <button id="closeModal" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#" id="formUpdate" class="d-flex flex-column gap-3">
+                                <input type="text" name="updateName" id="updateName" 
+                                placeholder="Seu Nome" minlength="3" required>
+                                <input type="email" name="updateEmail" id="updateEmail" 
+                                placeholder="Seu E-Mail" disabled required>
+                                <input oninput="verificarDataNasc()" type="date" placeholder="Data de nascimento" 
+                                id="dataNasc-update-input" required>
+                                <input type="password" name="updateSenha" id="updateSenha" 
+                                placeholder="Sua Senha" minlength="8" required>                                
+
+                                <div class="modal-footer d-flex align-items-center justify-content-center">
+                                    <button onclick="alterarDados()" type="submit" class="btn btn-primary modal-btn">Confirmar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         
-        <section class="agendar">
+        <section class="agendar" id="agendar">
 
             <h2>Agendar Consulta</h2>
             <div class="border border-agendar"></div>
@@ -129,7 +159,7 @@
               </div>
         </section>
 
-        <section class="horarios-agendados">
+        <section class="horarios-agendados" id="horarios-agendados">
             <h2>Meus Horários</h2>
             <div class="border border-horarios"></div>
             <div class="horarios-wrapper" id="consultas">
@@ -137,14 +167,14 @@
             </div>
         </section>
 
-        <section class="contato d-flex flex-column align-items-center">
+        <section class="contato d-flex flex-column align-items-center" id="contato">
             <h2 class="text-center fs-4 fw-semibold">Algum problema ou sugestão de melhoria?</h2>
             <p class="text-center">Não hesite em entrar em contato</p>
             <div class="border"></div>
             <a href="./contato.html" class="btn btn-success text-center w-50">Entre em contato</a>
         </section>
 
-        <section class="blog">
+        <section class="blog" id="blog">
             <h2>Blog</h2>
             <div class="border border-blog"></div>
             <div class="videos-container">
@@ -171,6 +201,7 @@
 
     <script src="../js/medicos.js"></script>
     <script src="../js/consulta.js"></script>
+    <script src="../js/dashboard.js"></script>
 </body>
 
 </html>

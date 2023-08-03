@@ -146,6 +146,51 @@ main {
     background-color: var(--grey-3);
 }
 
+/* MODAL */
+
+.alterar-dados-modal{
+    background-color: var(--brand-light);
+    border-radius: 25px;
+}
+
+.alterar-dados-modal h1{
+    font-weight: 700;
+}
+
+.alterar-dados-modal input{
+    border: 0;
+    outline: 0;
+    background-color: var(--brand-light-2);
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+.modal-btn{
+    background-color: var(--brand-1);
+    border: 0;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+}
+
+.modal-btn:hover{
+    background-color: var(--brand-1-hover);
+    border: 0;
+}
+
+.alteracao-sucesso{
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 1px 1px 10px black;
+    background-color: #198754;
+    display: none;
+}
+
+.show {
+    display: block;
+    animation: fadeInOut 3s ease-out;
+}
+
 /* AGENDAR CONSULTA */
 
 .agendar {
@@ -206,6 +251,24 @@ main {
 .button-form-agendar:hover {
     cursor: pointer;
     background-color: var(--brand-1-hover);
+}
+
+.consulta-card{
+    border: 1px solid var(--brand-1);
+    width: 80%;
+    padding: 2rem 1rem;
+}
+
+.consulta-card h1{
+    margin-bottom: 1.5rem;
+}
+
+.consulta-card p{
+    font-weight: bold;
+}
+
+.consulta-card span{
+    font-weight: normal;
 }
 
 /* Modal */

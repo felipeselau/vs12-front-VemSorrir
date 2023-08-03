@@ -1,5 +1,3 @@
-const formulario = document.getElementById('formReview');
-
 function loginOrDashboard(){
     if (localStorage.getItem("logado")) {
         window.location.href = './src/pages/dashboard.html';
@@ -7,6 +5,8 @@ function loginOrDashboard(){
         window.location.href = './src/pages/login.html';
     }
 }
+
+const formulario = document.getElementById('formReview');
 
 formulario.addEventListener('submit', (event) => {
     event.preventDefault();
