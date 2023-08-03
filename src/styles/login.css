@@ -1,9 +1,34 @@
 body{
-    height: 100vh;
     width: 100%;
     background-color: var(--off-white);
     display: flex;
     flex-direction: column;
+}
+
+.cadastro-sucesso, .erro-login{
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 1px 1px 10px black;
+    background-color: #198754;
+    display: none;
+}
+
+.erro-login{
+    background-color: #DC3545;
+}
+
+.show {
+    display: block;
+    animation: fadeInOut 3s ease-out;
+}
+
+.body-register{
+    height: 1000px;
+}
+
+.body-login{
+    height: 750px;
 }
 
 .nav-wrapper{

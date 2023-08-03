@@ -8,6 +8,24 @@ header {
     margin-top: 10px;
 }
 
+.show {
+    display: block;
+}
+
+.agendamento-sucesso, .erro-agendamento{
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 1px 1px 10px black;
+    background-color: #198754;
+    animation: fadeInOut 3s ease-out;
+    display: none;
+}
+
+.erro-agendamento{
+    background-color: #DC3545;
+}
+
 .main-header {
     width: 90%;
     display: flex;
@@ -31,12 +49,19 @@ nav {
 
 .nav-links {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
     list-style: none;
     text-decoration: none;
     font-size: 0.75rem;
     gap: 14px;
+    padding: 0;
+}
+
+.nav-links li{
+    display: flex;
+    align-items: center;
 }
 
 .nav-item {
@@ -62,6 +87,7 @@ main {
     padding: 30px 30px 35px 87px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: relative;
     margin-top: 32px;
     width: 90%;
@@ -112,13 +138,57 @@ main {
     border-radius: 16px;
     border: 1px solid var(--black);
     background-color: transparent;
-    width: 50%;
-    align-self: flex-end;
+    width: 100%;
 }
 
 .form-att-dados button:hover {
     cursor: pointer;
     background-color: var(--grey-3);
+}
+
+/* MODAL */
+
+.alterar-dados-modal{
+    background-color: var(--brand-light);
+    border-radius: 25px;
+}
+
+.alterar-dados-modal h1{
+    font-weight: 700;
+}
+
+.alterar-dados-modal input{
+    border: 0;
+    outline: 0;
+    background-color: var(--brand-light-2);
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+.modal-btn{
+    background-color: var(--brand-1);
+    border: 0;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+}
+
+.modal-btn:hover{
+    background-color: var(--brand-1-hover);
+    border: 0;
+}
+
+.alteracao-sucesso{
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 1px 1px 10px black;
+    background-color: #198754;
+    display: none;
+}
+
+.show {
+    display: block;
+    animation: fadeInOut 3s ease-out;
 }
 
 /* AGENDAR CONSULTA */
@@ -168,7 +238,7 @@ main {
     border-radius: 16px;
 }
 
-.button-form-agendar {
+.button-form-agendar, .button-form-medico {
     padding: 12px;
     border: none;
     border-radius: 16px;
@@ -181,6 +251,64 @@ main {
 .button-form-agendar:hover {
     cursor: pointer;
     background-color: var(--brand-1-hover);
+}
+
+.consulta-card{
+    border: 1px solid var(--brand-1);
+    width: 80%;
+    padding: 2rem 1rem;
+}
+
+.consulta-card h1{
+    margin-bottom: 1.5rem;
+}
+
+.consulta-card p{
+    font-weight: bold;
+}
+
+.consulta-card span{
+    font-weight: normal;
+}
+
+/* Modal */
+
+.button-form-medico{
+    background-color: var(--grey-3);
+    color: var(--black);
+}
+
+.lista-medicos{
+    background-color:var(--off-white);
+}
+
+.lista-medicos h1{
+    font-size: 700;
+}
+
+
+.medicos-form form{
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+.medicos-form form:first-child{
+    border-top: 1px solid var(--brand-1);
+}
+
+.medico-card{
+    padding: 1.3rem 1rem;
+    border-bottom: 1px solid var(--brand-1);
+}
+
+.medico-card input{
+
+}
+
+.nome-medico{
+    padding-left: 1rem;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 
